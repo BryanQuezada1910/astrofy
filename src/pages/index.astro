@@ -11,68 +11,51 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1">¡Hey! 👋</div>
+    <div class="text-5xl font-bold">Soy Bryan Quezada</div>
+    <div class="text-3xl py-3 font-bold">Desarrollador Web</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Siempre estoy en constante aprendizaje para mejorar mis habilidades y conocimientos. <br>Apasionado por el desarrollo web y la programación.
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
+      <a class="btn" href="../../public/CV-BryanQuezada.pdf" download target="_blank">Descargar CV</a>
+      <a href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/" target="_blank" class="btn btn-outline ml-5">
+        LinkedIn
+      </a>
+      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline ml-5">
+        GitHub
+      </a>
+      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline ml-5">
+        Correo
       </a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Mis proyectos {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="ChivoTour"
+    img="/chivotour.webp"
+    desc="Aplicación web y movil de sitios turísticos en El Salvador."
+    url="/blog/chivo-tour"
+    badge="Proyecto de Universidad"
   />
-  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="BidAssist"
+    img="/bidassist.webp"
+    desc="Aplicación web de subastas en tiempo real."
     url="#"
+    badge="Primer lugar a mejor proyecto"
   />
-  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
+    title="TODO App"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Aplicación web para gestionar tareas."
     url="#"
-    badge="FOSS"
+    badge="Proyecto personal"
   />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>
