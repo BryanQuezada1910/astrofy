@@ -1,10 +1,11 @@
-<div
-    class="block sticky pointer-events-none bottom-10 bg-base-200 justify-center h-12 [mask-image:linear-gradient(transparent,#000000)]"
->
-</div>
+---
+const today = new Date();
+---
 
-<div class="social-icons px-4 pb-5 pt-1 flex self-center justify-center sticky bottom-0 bg-base-200">
-    <a href="https://github.com/manuelernestog" target="_blank" class="mx-3" aria-label="Github" title="Github">
+<div class="block sticky pointer-events-none bottom-10 bg-base-200 justify-center h-12 [mask-image:linear-gradient(transparent,#000000)]"></div>
+
+<div class="social-icons px-4 pb-2 pt-1 flex self-center justify-center sticky bottom-0 bg-base-200">
+    <a href="https://github.com/manuelernestog" target="_blank" class="mx-2" aria-label="Github" title="Github">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -21,7 +22,7 @@
     <a
         href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/"
         target="_blank"
-        class="mx-3"
+        class="mx-2"
         aria-label="Linkedin"
         title="Linkedin"
     >
@@ -37,7 +38,7 @@
         </svg>
     </a>
 
-    <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed" title="RSS Feed">
+    <!-- <a href="/rss.xml" target="_blank" class="mx-3" aria-label="RSS Feed" title="RSS Feed">
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -48,5 +49,9 @@
                 d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"></path><circle cx="6" cy="18" r="2"
             ></circle>
         </svg>
-    </a>
+    </a> -->
+</div>
+
+<div class="text-center text-gray-500 pb-2">
+    {today.getFullYear()} - alfonso191001@gmail.com
 </div>

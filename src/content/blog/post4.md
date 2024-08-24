@@ -1,10 +1,10 @@
 ---
-title: "TO-DO App"
+title: "Demo Post 4"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 12 2022"
+pubDate: "Oct 12 2022"
 heroImage: "/post_img.webp"
-badge: "Proyecto personal"
-tags: ["NodeJS", "Express", "OAuth 2.0", "MaterializeCSS"]
+badge: "Demo badge"
+tags: ["Express", "Angular"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
