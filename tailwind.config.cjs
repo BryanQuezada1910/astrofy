@@ -1,21 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {
-      // Extensiones personalizadas
-      colors: {
-        customPrimary: '#009e98',
-        customSecondary: '#00b189',
-      },
-    },
+    extend: {},
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("daisyui")
-  ],
+  plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
       {
@@ -42,12 +31,7 @@ module.exports = {
           error: "#ea0032",
         },
       },
-      // Temas predeterminados
-      "light",
-      "dark"
     ],
-    theme: "mytheme", // Configura 'mytheme' como el tema predeterminado
-    darkTheme: "dark", // Nombre del tema para el modo oscuro
-    logs: false, // Desactiva los registros de DaisyUI en la consola
+    darkTheme: "dark",
   },
 };
