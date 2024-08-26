@@ -3,7 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
+<BaseLayout title="CV" sideBarActiveItemID="cv">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Perfil</div>
   </div>
@@ -35,22 +35,35 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Desarrollador FullStack en ChivoTour"
+      subtitle="Desde febrero de 2023 a diciembre de 2023 en Universidad de El Salvador, Santa Ana, El Salvador"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Durante el año 2023, participé en el desarrollo de un proyecto llamado ChivoTour <a href="/projects/chivo-tour" class="text-sky-600">ver proyecto</a>, un sitio web de Sitios Turísticos de El Salvador. Mi principal función fue desarrollar el módulo para la subida de nuevos sitios turísticos. Utilicé tecnologías como Quasar, Firebase y CouchDB. Este proyecto me permitió ganar experiencia integral en el desarrollo tanto del frontend como del backend, comprendiendo todo el ciclo de vida de una aplicación web, desde la creación de los mockups hasta el despliegue a producción.
+      <br><br>
+      A través de este proyecto, aprendí:
+      <br>
+      <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>Buenas prácticas de desarrollo.</li>
+        <li>Colaboración efectiva dentro de un equipo de desarrolladores, trabajando en un repositorio compartido en GitHub.</li>
+        <li>Metodologías ágiles de desarrollo, participando activamente en sprints.</li>
+        <li>Además, desarrollo mis propios proyectos personales para seguir mejorando mis conocimientos en el desarrollo web.</li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Desarrollador FullStack en BidAssist"
+      subtitle="Desde 22 de junio de 2023 a 2 de juli de 2023 en Curso de Desarrollo Web Backend - Fusalmo"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      Durante el curso de Desarrollo Web Backend en Fusalmo, desarrollé un proyecto llamado BidAssist <a href="/projects/bidassist" class="text-sky-600">ver proyecto</a>, una aplicación web de subastas en tiempo real. Mi principal función fue desarrollar el modulo modulo principal del backend y el servidor de WebSockets, utilizando tecnologías como Node.js, Express, MongoDB y SocketIO. Tambien trabaje con Angular para consumir el backend y desarrollar la interfaz principal de la web y la interfaz del chat en tiempo real. Este proyecto me permitió ganar experiencia en el desarrollo de APIs RESTful y en la implementación de autenticación y autorización en una aplicación web.
+      <br><br>
+      A través de este proyecto, aprendí:
+      <br>
+      <ul class="list-disc mx-6 grid gap-2">
+        <li>Desarrollo de APIs RESTful.</li>
+        <li>Desarrollo colaborativo con un equipo, utlizando Jira y GitHub</li>
+        <li>Manejo de bases de datos NoSQL.</li>
+        <li>Desarrollo de aplicaciones web escalables y seguras.</li>
+        <li>Implementación de autenticación y autorización en una aplicación web.</li>
+      </ul>
     </TimeLineElement>
   </div>
 
@@ -60,31 +73,87 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="/public/post_img.webp" target="_blank">Desarrollador Web Backend - Fusalmo <span style="color: #0081b0;">(Ver certificado)</span></a>
+      <a href="/public/Certificado-Fusalmo.pdf" target="_blank">Desarrollador Web Backend (188 horas) - Fusalmo <span class="text-sky-600">(Ver certificado)</span></a>
     </li>
-    <li>
+    <!-- <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+    </li> -->
   </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Skills</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>Node.js</li>
-    <li>Express</li>
-    <li>JWT</li>
-    <li>OAuth 2.0</li>
-    <li>MongoDB</li>
-    <li>MySQL</li>
-    <li>React</li>
-    <li>Angular</li>
-    <li>Docker</li>
-    <li>AWS</li>
-    <li>REST API</li>
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Lenguajes</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Java</li>
   </ul>
+
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Frameworks, Librerías y Entornos de Ejecución</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>React</li>
+      <li>Vue.js</li>
+      <li>Quasar</li>
+      <li>SocketIO</li>
+      <li>Moongose</li>
+      <li>JWT</li>
+      <li>OAuth 2.0</li>
+      <li>TailwindCSS</li>
+  </ul>
+
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Bases de Datos</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>MongoDB</li>
+      <li>MySQL</li>
+      <li>CouchDB</li>
+      <li>Firebase</li>
+  </ul>
+
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Herramientas de Desarrollo</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>Docker</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>Visual Studio Code</li>
+      <li>Figma</li>
+  </ul>
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Herramientas de Pruebas</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>Jest</li>
+      <li>Postman</li>
+      <li>Selenium</li>
+  </ul>
+  <div class="mb-5">
+      <div class="text-xl w-full font-bold">Servicios en la Nube</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+      <li>AWS</li>
+      <li>Heroku</li>
+      <li>Netlify</li>
+      <li>MongoDB Atlas</li>
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Idiomas</div>
+  </div>
+  <ul class="list-disc md:columns-4 columns-2 mx-6 mb-5">
+    <li>Español - Nativo</li>
+    <li>Inglés - Intermedio</li>
+  </ul>
+
 </BaseLayout>

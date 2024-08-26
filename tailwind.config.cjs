@@ -1,10 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"
+  ],
   theme: {
-    extend: {},
+    extend: {
+      // Extensiones personalizadas
+      colors: {
+        customPrimary: '#009e98',
+        customSecondary: '#00b189',
+      },
+    },
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
   daisyui: {
     themes: [
       {
@@ -13,7 +24,7 @@ module.exports = {
           secondary: "#00e1ff",
           accent: "#008fff",
           neutral: "#060405",
-          "base-100": "#002d33",
+          "base-100": "#002d3a",
           info: "#0081b0",
           success: "#00ecbb",
           warning: "#cc8300",
@@ -31,8 +42,12 @@ module.exports = {
           error: "#ea0032",
         },
       },
-    ], // true: all themes | false: only light + dark | array: specific themes like this ["light", "dark", "cupcake"]
-    darkTheme: "dark", // name of one of the included themes for dark mode
-    logs: false, // Shows info about daisyUI version and used config in the console when building your CSS
+      // Temas predeterminados
+      "light",
+      "dark"
+    ],
+    theme: "mytheme", // Configura 'mytheme' como el tema predeterminado
+    darkTheme: "dark", // Nombre del tema para el modo oscuro
+    logs: false, // Desactiva los registros de DaisyUI en la consola
   },
 };

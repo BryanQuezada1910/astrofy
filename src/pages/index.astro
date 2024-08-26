@@ -4,7 +4,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const posts = (await getCollection("projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
 ---
@@ -16,7 +16,7 @@ const last_posts = posts.slice(0, 3);
     <div class="text-3xl py-3 font-bold">Desarrollador Web</div>
     <div class="py-2">
       <text class="text-lg">
-        Siempre estoy en constante aprendizaje para mejorar mis habilidades y conocimientos. <br>Apasionado por el desarrollo web y la programación.
+        Siempre estoy en constante aprendizaje para mejorar mis habilidades y conocimientos. <br>Me gusta trabajar en proyectos que me desafíen y me permitan crecer profesionalmente.
       </text>
     </div>
     <div class="mt-8">
@@ -41,25 +41,25 @@ const last_posts = posts.slice(0, 3);
     title="ChivoTour"
     img="/chivotour.webp"
     desc="Aplicación web y movil de sitios turísticos en El Salvador."
-    url="/blog/chivo-tour"
+    url="/projects/chivo-tour"
     badge="Proyecto de Universidad"
   />
   <HorizontalCard
     title="BidAssist"
     img="/bidassist.webp"
     desc="Aplicación web de subastas en tiempo real."
-    url="/blog/bidassist"
-    badge="Primer lugar a mejor proyecto"
+    url="/projects/bidassist"
+    badge="1° lugar a mejor proyecto"
   />
-  <HorizontalCard
+  <!-- <HorizontalCard
     title="TO-DO App"
     img="/post_img.webp"
     desc="Aplicación web para gestionar tareas."
-    url="/blog/to-do-app"
+    url="/projects/to-do-app"
     badge="Proyecto personal"
-  />
+  /> -->
   <div class="mt-4">
-    <a href="/blog" target="_self" class="btn btn-outline ml-5 min-w-32">
+    <a href="/projects" target="_self" class="btn btn-outline ml-5 min-w-32">
       Ver más
     </a>
   </div>
