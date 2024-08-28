@@ -8,7 +8,7 @@ export interface Props extends projectsSchema {}
 
 const { title, description, pubDate, updatedDate, heroImage, badge, tags = [], url, repoUrl } = Astro.props;
 dayjs.extend(localizedFormat);
-const displayDate = dayjs(pubDate).format("ll")
+const displayDate = dayjs(pubDate).format("MMMM YYYY");
 import { Image } from "astro:assets";
 ---
 
@@ -17,15 +17,14 @@ import { Image } from "astro:assets";
     <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
       {heroImage && <Image width={750} height={422} format="webp" src={heroImage} alt={title} class="w-full mb-6" />}
       <h1 class="title my-2 text-4xl font-bold">{title}</h1>
-      {url && <a href={url} target="_blank" class="text-sky-600">Ir al sitio</a> <br />}
-      {repoUrl ? (<a href={repoUrl} target="_blank" class="text-sky-600">Ver repositorio</a> <br/>) : ( <span>Repositorio privado</span> <br/>)}
-      Publicado {pubDate && <time>{displayDate}</time>}
-      <br />
-      {badge && <div class="badge badge-secondary my-1"><b>{badge}</b></div>}
+      {url && <a href={url} target="_blank" class="text-sky-600">View project</a> <br/>}
+      {repoUrl ? (<a href={repoUrl} target="_blank" class="text-sky-600">View repository</a> <br/>) : ( <span>Private repository</span> <br/>)}
+      {pubDate && <div>Published: <time>{displayDate}</time></div>}
+      {badge && <div class="badge badge-secondary my-1 mr-1"><b>{badge}</b></div>}
       {
         tags &&
           tags.map((tag) => (
-            <a href={`/projects/tag/${tag}`} class="badge badge-outline ml-2 no-underline">
+            <a href={`/projects/tag/${tag}`} class="badge badge-outline mr-2 no-underline">
               {tag}
             </a>
           ))

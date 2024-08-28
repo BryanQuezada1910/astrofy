@@ -4,29 +4,32 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
-const posts = (await getCollection("projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+// const posts = (await getCollection("projects")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const last_posts = posts.slice(0, 3);
+// const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">¡Hey! 👋</div>
-    <div class="text-5xl font-bold">I am Bryan Quezada</div>
+    <div class="text-5xl font-bold">I'm Bryan Quezada</div>
     <div class="text-3xl py-3 font-bold">Web Developer</div>    
     <div class="py-2">
       <text class="text-lg">
-        I am always in constant learning to improve my skills and knowledge. I enjoy working on projects that challenge me and allow me to grow professionally.      </text>
+        I am always constantly learning to improve my skills and knowledge.
+        <br>
+        I enjoy working on projects that challenge me and allow me to grow professionally.
+      </text>
     </div>
     <div class="mt-8">
-      <a class="btn mr-2 mb-5 min-w-32" href="/CV-BryanQuezada.pdf" download target="_blank">Download CV</a>
-      <a href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/" target="_blank" class="btn btn-outline mr-2 mb-5 min-w-32">
+      <a class="btn mr-2 mb-5 w-36" href="/CV-BryanQuezada.pdf" download target="_blank">Download CV</a>
+      <a href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
         LinkedIn
       </a>
-      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline mr-2 mb-5 min-w-32">
+      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
         GitHub
       </a>
-      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline mr-2 mb-5 min-w-32">
+      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
         Contact me 📧
       </a>
     </div>
@@ -39,16 +42,16 @@ const last_posts = posts.slice(0, 3);
   <HorizontalCard
     title="ChivoTour"
     img="/chivotour.webp"
-    desc="Aplicación web y movil de sitios turísticos en El Salvador."
+    desc="Web and mobile application of tourist sites in El Salvador"
     url="/projects/chivo-tour"
-    badge="Proyecto de Universidad"
+    badge="University project"
   />
   <HorizontalCard
     title="BidAssist"
     img="/bidassist.webp"
-    desc="Aplicación web de subastas en tiempo real."
+    desc="Real-time auction web application"
     url="/projects/bidassist"
-    badge="1° lugar a mejor proyecto"
+    badge="1° place for best project"
   />
   <!-- <HorizontalCard
     title="TO-DO App"
@@ -58,7 +61,7 @@ const last_posts = posts.slice(0, 3);
     badge="Proyecto personal"
   /> -->
   <div class="mt-4">
-    <a href="/projects" target="_self" class="btn btn-outline ml-5 min-w-32">
+    <a href="/projects" target="_self" class="btn btn-outline ml-5 w-36">
       View more
     </a>
   </div>
