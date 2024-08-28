@@ -1,7 +1,7 @@
 ---
 title: "BidAssist"
 description: "Real-time auction web application"
-heroImage: "/bidassist.webp"
+heroImage: "/Mockup-BidAssist.webp"
 badge: "1° place for best project"
 tags: ["NodeJS", "Express", "MongoDB", "JWT", "Redis", "WebSockets", "Angular", "TypeScript", "API REST"]
 repoUrl: "https://github.com/BryanQuezada1910/BidAssistBackend"
