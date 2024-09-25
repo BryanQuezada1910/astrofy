@@ -1,0 +1,20 @@
+---
+interface Props {
+    images: string[];    
+}
+
+const { images } = Astro.props;
+---
+
+<div class="carousel w-full">
+    {images.map((image, index) => (
+        <div id={`item${index+1}`} class="carousel-item w-full">
+            <img src={image} alt={`Carousel image ${index+1}`} class="w-full" />
+        </div>
+    ))}
+</div>
+<div class="flex w-full justify-center gap-2 py-2">
+    {images.map((image, index) => (
+        <a href={`#item${index+1}`} class="btn btn-outline btn-sm">{index+1}</a>
+    ))}
+</div>
