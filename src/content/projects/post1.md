@@ -3,7 +3,7 @@ title: "ChivoTour"
 description: "Web and mobile application of tourist sites in El Salvador"
 pubDate: "Nov 2023"
 images: ["/chivotour/Mockup-ChivoTour.webp", "/chivotour/chivotour-1.png", "/chivotour/chivotour-2.png", "/chivotour/chivotour-3.png", "/chivotour/chivotour-4.png"]
-badge: "University Project"
+badge: "Tourism App"
 tags: ["Quasar Framework", "VueJS", "Firebase", "CouchDB"]
 url: "https://chivotour.com/"
 ---
