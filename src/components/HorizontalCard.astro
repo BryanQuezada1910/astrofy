@@ -2,10 +2,12 @@
 const { title, img, desc, url, badge, tags, target = "_self" } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
+console.log(url);
 ---
 
 <div
   class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+  transition:name={url}
 >
   <a href={url} target={target}>
     <div class="hero-content flex-col md:flex-row">
@@ -22,7 +24,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
         )
       }
       <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+        <h1 class="text-xl font-bold" transition:name={`${title}-transition`}>
           {title}
           {badge && <div class="font-bold badge badge-secondary">{badge}</div>}
         </h1>
