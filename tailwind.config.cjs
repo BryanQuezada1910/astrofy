@@ -9,6 +9,7 @@ module.exports = {
   plugins: [animations, require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
+      'night',
       {
         mytheme: {
           primary: "#009e98",
@@ -34,6 +35,5 @@ module.exports = {
         },
       },
     ],
-    darkTheme: "dark",
   },
 };
