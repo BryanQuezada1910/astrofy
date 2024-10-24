@@ -7,7 +7,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">¡Hey! 👋</div>
     <div class="text-5xl font-bold">I'm Bryan Quezada</div>
-    <div class="text-3xl py-3 font-bold flex items-center">FullStack Developer <span class="badge badge-info badge-outline ml-3">Open to work</span></div> 
+    <div class="flex flex-wrap items-center gap-x-4">
+      <div class="text-3xl py-3 font-bold">FullStack Developer</div>
+      <span class="badge badge-info badge-outline font-bold">Open to work</span> 
+    </div>
     <div class="py-2">
       <text class="text-lg">
         Constantly learning and striving to enhance skills and expand knowledge.
@@ -15,15 +18,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         Thriving on challenging projects that foster professional and personal growth.
       </text>    
     </div>
-    <div class="mt-8">
-      <a class="btn mr-2 mb-5 w-36" href="/CV-BryanQuezada.pdf" target="_blank">Download CV</a>
-      <a href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
+    <div class="flex flex-wrap gap-4 max-xs:justify-center mt-8">
+      <a class="btn btn-outline btn-info" href="/CV-BryanQuezada.pdf" target="_blank">Download CV</a>
+      <a href="https://www.linkedin.com/in/bryan-alfonso-quezada-jim%C3%A9nez-8815a11b4/" target="_blank" class="btn btn-outline">
         LinkedIn
       </a>
-      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
+      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline">
         GitHub
       </a>
-      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline mr-2 mb-5 w-36">
+      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline btn-warning">
         Contact me 📧
       </a>
     </div>
@@ -48,7 +51,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     badge="CMS Project"
   />
   <div class="mt-4">
-    <a href="/projects" target="_self" class="btn btn-outline ml-5 w-36">
+    <a href="/projects" target="_self" class="btn btn-outline ml-5">
       View more
     </a>
   </div>
