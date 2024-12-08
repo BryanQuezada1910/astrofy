@@ -6,15 +6,90 @@ interface Props {
 const { images } = Astro.props;
 ---
 
-<div class="carousel w-full">
+<div class="carousel w-full" id="carousel">
     {images.map((image, index) => (
-        <div id={`item${index+1}`} class="carousel-item w-full">
-            <img src={image} alt={`Carousel image ${index+1}`} class="w-full" />
+        <div id={`item${index + 1}`} class="carousel-item w-full">
+            <img src={image} alt={`Carousel image ${index + 1}`} class="w-full" />
         </div>
     ))}
 </div>
+
 <div class="flex w-full justify-center gap-2 py-2">
-    {images.map((image, index) => (
-        <a href={`#item${index+1}`} class="btn btn-outline btn-sm">{index+1}</a>
+    {images.map((_, index) => (
+        <button 
+            data-index={index + 1} 
+            class="btn btn-sm btn-secondary btn-outline carousel-button"
+        >
+            {index + 1}
+        </button>
     ))}
 </div>
+
+<script is:inline>
+    function initCarousel() {
+        const buttons = document.querySelectorAll('.carousel-button');
+        const carousel = document.getElementById('carousel');
+        const items = document.querySelectorAll('.carousel-item');
+
+        if (!buttons.length || !carousel || !items.length) return;
+
+        buttons[0]?.classList.add('btn-active');
+
+        const clickHandlers = new Map();
+
+        buttons.forEach(button => {
+            const handler = () => {
+                const index = button.getAttribute('data-index');
+                const target = document.getElementById(`item${index}`);
+                
+                buttons.forEach(btn => btn.classList.remove('btn-active'));
+                button.classList.add('btn-active');
+                
+                if (target) {
+                    target.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'nearest',
+                        inline: 'start'
+                    });
+                }
+            };
+
+            clickHandlers.set(button, handler);
+            button.addEventListener('click', handler);
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                    const id = entry.target.id;
+                    const index = id.replace('item', '');
+                    
+                    buttons.forEach(btn => {
+                        const btnIndex = btn.getAttribute('data-index');
+                        btn.classList.toggle('btn-active', btnIndex === index);
+                    });
+                }
+            });
+        }, {
+            root: carousel,
+            threshold: 0.5,
+            rootMargin: '0px'
+        });
+
+        items.forEach(item => observer.observe(item));
+
+        return () => {
+            buttons.forEach(button => {
+                const handler = clickHandlers.get(button);
+                if (handler) {
+                    button.removeEventListener('click', handler);
+                }
+            });
+            observer.disconnect();
+        };
+    }
+
+    document.addEventListener('astro:page-load', initCarousel);
+    
+    initCarousel();
+</script>
