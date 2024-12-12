@@ -9,7 +9,7 @@ const { images } = Astro.props;
 <div class="carousel w-full" id="carousel">
     {images.map((image, index) => (
         <div id={`item${index + 1}`} class="carousel-item w-full">
-            <img src={image} alt={`Carousel image ${index + 1}`} class="w-full" />
+            <img src={image} alt={`Carousel image ${index + 1}`} class="w-full aspect-video" />
         </div>
     ))}
 </div>
