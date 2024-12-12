@@ -25,7 +25,7 @@ console.log("Path url: " + pathUrl);
       )}
       <h1 class="title my-2 text-4xl font-bold" transition:name={`${title}-transition`}>{title}</h1>
       {url && <a href={url} target="_blank" class="text-sky-600">View project</a> <br/>}
-      {repoUrl ? (<a href={repoUrl} target="_blank" class="text-sky-600">View repository</a> <br/>) : ( <span>Private repository</span> <br/>)}
+      {repoUrl ? (<a href={repoUrl} target="_blank" class="text-sky-600">Repository</a> <br/>) : ( <span class="text-error">Private repository</span> <br/>)}
       {pubDate && <div>Published: <time>{displayDate}</time></div>}
       {badge && <div class="badge badge-secondary my-1 mr-1"><b>{badge}</b></div>}
       {

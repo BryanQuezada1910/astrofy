@@ -11,6 +11,7 @@ const projectsSchema = z.object({
     }).optional(),
     url: z.string().optional(),
     repoUrl: z.string().optional(),
+    order: z.number(),
 });
 
 const storeSchema = z.object({

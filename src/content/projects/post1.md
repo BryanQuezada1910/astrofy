@@ -6,6 +6,7 @@ images: ["/chivotour/Mockup-ChivoTour.webp", "/chivotour/chivotour-1.png", "/chi
 badge: "Tourism App"
 tags: ["Quasar Framework", "VueJS", "Firebase", "CouchDB"]
 url: "https://chivotour.com/"
+order: 1
 ---
 
 **ChivoTour** is an innovative application designed for exploring and discovering tourist sites in El Salvador. Developed with the [Quasar Framework](https://quasar.dev/) by a team of 15 students as a university project, **ChivoTour provides a comprehensive platform for both web and Android devices.** The application offers users a complete browsing experience, allowing them to access detailed information about the country’s main tourist destinations.
