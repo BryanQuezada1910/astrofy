@@ -14,7 +14,7 @@ const { images } = Astro.props;
     ))}
 </div>
 
-<div class="flex w-full justify-center gap-2 py-2">
+<div class="flex flex-wrap w-full justify-center gap-2 py-2">
     {images.map((_, index) => (
         <button 
             data-index={index + 1} 
