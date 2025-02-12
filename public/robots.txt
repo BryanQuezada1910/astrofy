@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bryanquezada.tech
+Sitemap: https://bryanquezada.tech/sitemap-index.xml
