@@ -4,7 +4,7 @@ description: "CMS application for a TV channel"
 pubDate: "Sep 2024"
 images: ["/wowtv/Mockup-WowTV.webp", "/wowtv/wowtv-1.webp", "/wowtv/wowtv-2.webp", "/wowtv/wowtv-3.webp", "/wowtv/wowtv-4.webp", "/wowtv/wowtv-5.webp"]
 badge: "CMS Project"
-tags: ["Astro Framework", "Strapi CMS", "PostgreSQL", "Cloudinary", "NodeJS"]
+tags: ["Strapi CMS", "Astro", "Reactjs", "TailwindCSS"]
 url: "https://master--wowtv-cms.netlify.app/"
 order: 2
 ---

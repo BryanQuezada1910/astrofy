@@ -4,7 +4,7 @@ description: "Attendance registration with NFC Cards"
 pubDate: "Dec 2024"
 images: ["/youaccess/Mockup-YouAccess.webp", "/youaccess/nfc-module.webp", "/youaccess/youaccess-1.webp", "/youaccess/youaccess-2.webp", "/youaccess/youaccess-3.webp", "/youaccess/youaccess-4.webp", "/youaccess/youaccess-5.webp", "/youaccess/youaccess-6.webp", "/youaccess/youaccess-7.webp", "/youaccess/youaccess-8.webp", "/youaccess/youaccess-9.webp", "/youaccess/youaccess-10.webp", "/youaccess/youaccess-11.webp"]
 badge: "IoT Project"
-tags: ["Esp32", "NFC", "NodeJS", "Express", "MongoDB", "JWT", "WebSockets", "Socket.io", "API REST", "Quasar Framework", "VueJS"]
+tags: ["Esp32", "NodeJS", "Express", "MongoDB", "Quasar Framework"]
 url: "https://youaccess.netlify.app/"
 repoUrl: "https://github.com/BryanQuezada1910/access-control-backend"
 order: 3
