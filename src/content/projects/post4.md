@@ -3,7 +3,7 @@ title: "TO-DO App"
 description: "Web application for task management"
 images: ["/todo-app/todo-app-1.png", "/todo-app/todo-app-2.png", "/todo-app/todo-app-3.png"]
 badge: "Personal Project"
-tags: ["NodeJS", "Express", "MongoDB", "OAuth 2.0", "Google Sign-In"]
+tags: ["NodeJS", "Express", "MongoDB", "OAuth 2.0", "Google Sign-In", "TailwindCSS"]
 repoUrl: "https://github.com/BryanQuezada1910/notes-app"
 order: 5
 ---
