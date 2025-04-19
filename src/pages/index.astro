@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -9,29 +10,138 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     <div class="text-5xl font-bold">I'm Bryan Quezada</div>
     <div class="flex flex-wrap items-center gap-x-4">
       <div class="text-3xl py-3 font-bold">FullStack Developer</div>
-      <a class="transition-transform duration-300 hover:scale-110" href="https://www.linkedin.com/in/bryanquezada19/" target="_blank" rel="noopener noreferrer">
-        <span class="badge badge-info badge-outline font-bold">Open to work</span>
-      </a> 
+      <a
+        class="transition-transform duration-300 hover:scale-110"
+        href="https://www.linkedin.com/in/bryanquezada19/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="badge badge-info badge-outline font-bold"
+          >Open to work</span
+        >
+      </a>
     </div>
     <div class="py-2">
-      <text class="text-lg">
-        Constantly learning and striving to enhance skills and expand knowledge.
-        <br>
-        Thriving on challenging projects that foster professional and personal growth.
-      </text>    
+      <p class="text-lg mb-2">
+        Computer Systems Engineering student and FullStack developer with
+        experience creating web and mobile applications. For over +3 years, I've
+        been involved in programming projects, both academic and personal, which
+        has allowed me to master key technologies for backend and frontend
+        development.
+      </p>
+      <p class="text-lg">
+        I currently work at a company where I'm responsible for developing a
+        mobile application.
+      </p>
     </div>
-    <div class="flex flex-wrap gap-4 max-xs:justify-center mt-8">
-      <a class="btn btn-outline btn-info" href="/CV-BryanQuezada.pdf" target="_blank">Download CV</a>
-      <a href="https://www.linkedin.com/in/bryanquezada19/" target="_blank" class="btn btn-outline">
+    <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 sm:gap-4 mt-8">
+      <a
+        class="btn btn-outline col-span-1 w-full sm:w-36 btn-info"
+        href="/CV-BryanQuezada.pdf"
+        target="_blank">Download CV</a
+      >
+      <a
+        href="https://www.linkedin.com/in/bryanquezada19/"
+        target="_blank"
+        class="btn btn-outline col-span-1 w-full sm:w-36"
+      >
         LinkedIn
       </a>
-      <a href="https://github.com/BryanQuezada1910" target="_blank" class="btn btn-outline">
+      <a
+        href="https://github.com/BryanQuezada1910"
+        target="_blank"
+        class="btn btn-outline col-span-1 w-full sm:w-36"
+      >
         GitHub
       </a>
-      <a href="mailto:alfonso191001@gmail.com" target="_blank" class="btn btn-outline btn-warning">
+      <a
+        href="mailto:alfonso191001@gmail.com"
+        target="_blank"
+        class="btn btn-outline col-span-1 w-full sm:w-36 btn-warning"
+      >
         Contact me 📧
       </a>
     </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Mobile Developer at TI Negocios"
+      subtitle="From January 2025 to present"
+    >
+      Responsible for developing and improving a mobile application for freight
+      transport operators, using React Native with Expo.
+      <ul class="list-disc mx-6 mb-10 grid gap-2 text-sm">
+        <li>
+          Implementation of interfaces and complete redesign of the application,
+          improving usability and user experience.
+        </li>
+        <li>Diagnosis and resolution of errors reported in production.</li>
+        <li>
+          Global state management with Zustand, optimizing data flow and
+          improving application performance.
+        </li>
+        <li>
+          Collaboration in an agile environment, actively participating in
+          follow-up and planning meetings.
+        </li>
+      </ul>
+    </TimeLineElement>
+    <!-- <TimeLineElement
+      title="FullStack Developer at WOWTV"
+      subtitle="From September, 2024 to December 2024"
+    >
+      Web content management application for displaying news <a
+        href="/projects/wow-tv"
+        class="text-sky-600 underline">see project</a
+      >
+      <ul class="list-disc mx-6 mb-10 grid gap-2 text-sm">
+        <li>
+          Led a team of 2 developers, coordinating tasks and establishing
+          objectives using Jira for sprint management.
+        </li>
+        <li>
+          Implemented and configured the content management system using Strapi,
+          adapting it to the specific needs of the project.
+        </li>
+        <li>
+          Developed and consumed the Strapi API from the frontend, built with
+          Astro, ensuring efficient data flow and optimal content presentation.
+        </li>
+        <li>
+          Managed and executed the deployment of both backend and frontend,
+          ensuring a stable and functional production environment.
+        </li>
+      </ul>
+    </TimeLineElement> -->
+    <TimeLineElement
+      title="FullStack Developer at ChivoTour"
+      subtitle="From February 2023 to December 2023"
+    >
+      Web and mobile application developed to showcase tourist sites in El
+      Salvador
+      <a href="/projects/chivotour" class="text-sky-600 underline"
+        >see project</a
+      >
+      <ul class="list-disc mx-6 grid gap-2 text-sm">
+        <li>
+          Developed, in collaboration with a team of 3 developers, the module
+          for registering new tourist sites.
+        </li>
+        <li>
+          Participated in the implementation of functionality for uploading and
+          managing images for each site.
+        </li>
+        <li>
+          Contributed to the database design and development, ensuring the
+          correct structure and relationship of the data.
+        </li>
+      </ul>
+    </TimeLineElement>
   </div>
 
   <div>
@@ -57,23 +167,4 @@ import HorizontalCard from "../components/HorizontalCard.astro";
       View more
     </a>
   </div>
-<!-- <div class="divider mt-8"></div>
-  <div class="mt-4">
-    <div>
-      <div class="text-3xl w-full font-bold mb-5">Services</div>
-    </div>
-
-    <HorizontalCard
-      title="Backend Developer"
-      img="/Backend-img.webp"
-      desc="Specialized in creating RESTful APIs, database management, security, scalability, performance, and more"
-      url="#"
-    />
-    <HorizontalCard
-        title="Fullstack Developer"
-        img="/full_stack_banner.webp"
-        desc="I can work on both the front-end and back-end of an application, from the user interface to the server, database, and more"
-        url="#"
-    />
-  </div> -->
 </BaseLayout>

@@ -5,7 +5,7 @@ pubDate: "Nov 2023"
 images: ["/chivotour/Mockup-ChivoTour.webp", "/chivotour/chivotour-1.png", "/chivotour/chivotour-2.png", "/chivotour/chivotour-3.png", "/chivotour/chivotour-4.png"]
 badge: "Tourism App"
 tags: ["Quasar Framework", "VueJS", "Firebase", "CouchDB"]
-url: "https://chivotour.com/"
+url: "https://play.google.com/store/apps/details?id=com.chivotour&hl=es_419"
 order: 1
 ---
 

@@ -1,0 +1,118 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Education & Skills" sideBarActiveItemID="education-skills">
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Education</div>
+    </div>
+
+    <div class="time-line-container grid gap-4 mb-10">
+      <TimeLineElement
+        title="Computer Systems Engineering"
+        subtitle="2020 to present at Universidad de El Salvador, Santa Ana, El Salvador"
+      />
+      <TimeLineElement
+        title="General Baccalaureate"
+        subtitle="2018 to 2019 Complejo Educativo Católico María Auxiliadora, Santa Ana, El Salvador"
+      />
+    </div>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Certifications</div>
+    </div>
+
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+      <li>
+        <a href="/Certificado-Fusalmo.pdf" target="_blank"
+          >Backend Web Development (188 hours) - Fusalmo <span
+            class="text-sky-600 underline">See certificate</span
+          ></a
+        >
+      </li>
+      <li>
+        <a href="/Certificado-Universidad-Java-Udemy.pdf" target="_blank"
+          >Universidad Java - Cero a Experto (+150 hours) - Udemy <span
+            class="text-sky-600 underline">See certificate</span
+          ></a
+        >
+      </li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold">Languages</div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>TypeScript</li>
+      <li>Java</li>
+      <li>SQL</li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold">
+        Frameworks, Libraries, and Execution Environments
+      </div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>React Native</li>
+      <li>Springboot</li>
+      <li>Astro Framework</li>
+      <li>React</li>
+      <li>Vue.js</li>
+      <li>Quasar</li>
+      <li>SocketIO</li>
+      <li>Moongose</li>
+      <li>JWT</li>
+      <li>OAuth 2.0</li>
+      <li>TailwindCSS</li>
+      <li>Strapi CMS</li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold">Databases</div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>MongoDB</li>
+      <li>MySQL</li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold">Development Tools</div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>Docker</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>Visual Studio Code</li>
+      <li>Figma</li>
+    </ul>
+    <div class="mb-5">
+      <div class="text-xl w-full font-bold">Cloud Services</div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>AWS</li>
+      <li>Heroku</li>
+      <li>Netlify</li>
+      <li>MongoDB Atlas</li>
+    </ul>
+
+    <div class="mb-5">
+      <div class="text-3xl w-full font-bold">Languages</div>
+    </div>
+    <ul class="list-disc md:columns-3 columns-2 mx-6 mb-5">
+      <li>Spanish - Native</li>
+      <li>English - Intermediate</li>
+    </ul>
+
+    
+</BaseLayout>
